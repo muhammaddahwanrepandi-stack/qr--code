@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrapbook Untukmu 💌</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; overflow-x:hidden;
+  font-family:Poppins,sans-serif;
+  background:#f7e8df;
+  color:#5d4148;
+}
+body:before{
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.22;
+  background-image:radial-gradient(#8b6870 0.7px,transparent .7px);
+  background-size:14px 14px;
+}
+.wrap{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:30px 15px}
+.book{
+  width:min(920px,100%); min-height:650px; position:relative;
+  background:#fffaf4; border-radius:18px;
+  box-shadow:0 22px 55px #6e4c5330;
+  padding:35px;
+  border:2px solid #ead4c9;
+}
+.tape{position:absolute;width:100px;height:28px;background:#e8c7b8aa;top:18px}
+.t1{left:55px;transform:rotate(-7deg)} .t2{right:55px;transform:rotate(7deg)}
+.page{display:none;min-height:570px;animation:in .5s ease}
+.page.active{display:block}
+@keyframes in{from{opacity:0;transform:translateX(20px) rotate(1deg)}to{opacity:1;transform:none}}
+h1,h2,.hand{font-family:Caveat,cursive}
+h1{font-size:64px;line-height:.9;margin:65px 0 12px;text-align:center;color:#a65d6d}
+h2{font-size:42px;color:#a65d6d;margin:15px 0}
+.subtitle{text-align:center;font-size:15px;color:#85666d}
+.heart{font-size:60px;text-align:center;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.1)}}
+.note{
+  background:#fff0a8; padding:24px; max-width:650px; margin:25px auto;
+  transform:rotate(-1deg); box-shadow:5px 7px 12px #8a656522;
+  font-family:Caveat,cursive;font-size:27px; line-height:1.2;
+}
+.paper{
+  background:#fff; padding:25px; margin:25px auto; max-width:700px;
+  border:1px solid #eadfe0; box-shadow:4px 6px 15px #75545b22;
+  transform:rotate(.5deg); line-height:1.8;
+}
+.polaroids{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin:25px 0}
+.polaroid{
+  width:180px;height:205px;background:white;padding:10px 10px 30px;
+  box-shadow:5px 8px 15px #75545b25;transform:rotate(-4deg)
+}
+.polaroid:nth-child(2){transform:rotate(5deg)}
+.photo{
+  height:155px;background:#f3d9d1;display:flex;align-items:center;
+  justify-content:center;color:#9d737b;font-size:14px;text-align:center
+}
+.caption{text-align:center;font-family:Caveat;font-size:20px}
+.controls{display:flex;justify-content:center;gap:12px;margin-top:15px}
+button{
+  border:0;border-radius:30px;padding:12px 20px;cursor:pointer;
+  background:#a65d6d;color:white;font-family:Poppins;font-weight:600;
+  box-shadow:0 5px 12px #a65d6d33;
+}
+button.secondary{background:#ead1d0;color:#704b53}
+.dots{text-align:center;margin-top:10px;color:#a65d6d}
+.final{text-align:center;padding-top:80px}
+.final .big{font-family:Caveat;font-size:38px;color:#a65d6d}
+.small{font-size:12px;color:#9b7d83;text-align:center;margin-top:35px}
+.sticker{position:absolute;font-size:28px}
+.s1{left:25px;top:110px}.s2{right:25px;top:300px}.s3{left:35px;bottom:55px}.s4{right:40px;bottom:70px}
+@media(max-width:600px){
+ .book{padding:22px;min-height:620px}.page{min-height:570px}
+ h1{font-size:48px;margin-top:65px} h2{font-size:35px}
+ .note{font-size:24px}.polaroid{width:145px;height:175px}.photo{height:130px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main class="book">
+    <div class="tape t1"></div><div class="tape t2"></div>
+    <div class="sticker s1">🌷</div><div class="sticker s2">💌</div>
+    <div class="sticker s3">✿</div><div class="sticker s4">♡</div>
+
+    <section class="page active">
+      <div class="heart">♡</div>
+      <h1>Untuk Kamu,<br>yang Berarti</h1>
+      <p class="subtitle">sebuah scrapbook kecil yang aku buat dari hati</p>
+      <div class="note">"Kadang kata maaf memang sederhana, tapi aku ingin kamu tahu kalau kali ini aku mengucapkannya dengan sungguh-sungguh."</div>
+    </section>
+
+    <section class="page">
+      <h2>Halaman Pertama 🌷</h2>
+      <div class="paper">
+        Aku mau mulai dengan satu kata yang mungkin sudah sering kamu dengar dariku:
+        <strong>maaf.</strong><br><br>
+        Maaf kalau pernah ada sikap atau perkataanku yang membuat kamu kecewa,
+        sedih, atau merasa tidak dihargai. Aku sadar aku masih banyak kurangnya.
+        Aku tidak ingin membenarkan kesalahanku, aku cuma ingin belajar dari semuanya.
+      </div>
+      <div class="note">Aku mungkin tidak selalu bisa menjadi yang paling sempurna, tapi aku ingin terus berusaha menjadi lebih baik untuk kita.</div>
+    </section>
+
+    <section class="page">
+      <h2>Little Memories 📸</h2>
+      <div class="polaroids">
+        <div class="polaroid"><div class="photo">📷<br>tempat foto kita</div><div class="caption">satu kenangan</div></div>
+        <div class="polaroid"><div class="photo">💗<br>tambahkan foto di sini</div><div class="caption">yang selalu kuingat</div></div>
+      </div>
+      <p class="subtitle">Kamu bisa mengganti kotak-kotak ini dengan foto kalian nanti.</p>
+    </section>
+
+    <section class="page">
+      <h2>Yang Ingin Aku Bilang 💌</h2>
+      <div class="paper">
+        Terima kasih karena sudah bertahan, sudah mau mendengarkan, dan sudah
+        menjadi bagian dari hari-hariku. Aku menghargai setiap momen yang kita
+        punya, baik yang sederhana maupun yang terasa istimewa.<br><br>
+        Aku tidak ingin meminta kamu melupakan semuanya begitu saja. Aku cuma
+        berharap kamu bisa melihat bahwa aku benar-benar menyesal dan ingin
+        memperbaiki apa yang bisa diperbaiki.
+      </div>
+    </section>
+
+    <section class="page final">
+      <div class="heart">💗</div>
+      <div class="big">Maaf untuk semuanya.</div>
+      <p>Semoga setelah halaman ini, masih ada cerita baik yang bisa kita tulis bersama.</p>
+      <div class="note">"Aku sayang kamu, dan aku akan berusaha menunjukkannya lewat sikap, bukan cuma kata-kata."</div>
+      <p class="small">dibuat dengan tulus ♡</p>
+    </section>
+
+    <div class="controls">
+      <button class="secondary" id="prev" onclick="move(-1)">← Sebelumnya</button>
+      <button id="next" onclick="move(1)">Berikutnya →</button>
+    </div>
+    <div class="dots" id="dots">♥ 1 / 5</div>
+  </main>
+</div>
+
+<script>
+let current=0;
+const pages=document.querySelectorAll('.page');
+const dots=document.getElementById('dots');
+const prev=document.getElementById('prev');
+const next=document.getElementById('next');
+
+function show(){
+ pages.forEach((p,i)=>p.classList.toggle('active',i===current));
+ dots.textContent='♥ '+(current+1)+' / '+pages.length;
+ prev.style.visibility=current===0?'hidden':'visible';
+ next.textContent=current===pages.length-1?'Kembali ke awal ↻':'Berikutnya →';
+}
+function move(dir){
+ if(current===pages.length-1 && dir===1) current=0;
+ else if(current===0 && dir===-1) return;
+ else current=Math.max(0,Math.min(pages.length-1,current+dir));
+ show();
+}
+show();
+</script>
+</body>
+</html>
